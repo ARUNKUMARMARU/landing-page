@@ -3,7 +3,7 @@ import './Landing.css';
 import { Card  } from 'antd';
 import {  } from "@ant-design/icons";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
 import home from '../assets/intro.jpg';
 import amazon from '../assets/amazon.jpg';
@@ -92,7 +92,8 @@ function Landing() {
       </div> 
       <div className='allcard'>
       <div>
-      <Card
+     <Link to='/seo' style={{textDecoration:'none'}}>
+     <Card
     title="Search Engine Optimization (SEO)"
    className='card'
     style={{
@@ -103,6 +104,7 @@ function Landing() {
     <p>Boost your online visibility and attract organic traffic with our expert SEO strategies.</p>
     
   </Card>
+     </Link>
       </div>
       <div>
       <Card

@@ -1,0 +1,130 @@
+/* General Styling */
+.seo-container {
+    position: relative;
+  
+    background-image: url('path_to_your_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .background-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+ 
+  .seo-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    animation: wave 2s infinite;
+  }
+  
+  
+  .seo-description {
+    font-size: 1.2em;
+    color: #f0f0f0;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  
+  .seo-subtitle {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+ 
+  .seo-benefits {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #f0f0f0;
+    margin-bottom: 40px;
+  }
+  
+  .seo-benefits li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    animation: blink 1.5s infinite;
+  }
+  
+  .benefit-icon {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-right: 10px;
+  }
+  
+  
+  .approach-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .approach-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    text-align: left;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+  }
+  
+  .approach-item h3 {
+    font-size: 1.5em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .approach-item p {
+    font-size: 1em;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes wave {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes fly-in {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fly-in {
+    animation: fly-in 1s ease-out;
+  }
+  
